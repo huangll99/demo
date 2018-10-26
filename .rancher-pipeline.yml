@@ -10,6 +10,5 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: demo:1.0
-      pushRemote: true
       registry: 127.0.0.1:34640
 timeout: 60
