@@ -1,0 +1,7 @@
+stages:
+- name: compile
+  steps:
+  - runScriptConfig:
+      image: java:8
+      shellScript: mvn clean package
+timeout: 60
