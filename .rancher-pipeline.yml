@@ -1,0 +1,7 @@
+stages:
+- name: compile
+  steps:
+  - runScriptConfig:
+      image: maven:3.5.4-jdk-8-alpine
+      shellScript: mvn clean package
+timeout: 60
