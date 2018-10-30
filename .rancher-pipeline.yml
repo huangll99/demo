@@ -12,6 +12,7 @@ stages:
       tag: gsafety/demo:1.0
       pushRemote: true
       registry: 10.3.10.131:5000
+      insecure: false
     env:
       PLUGIN_DEBUG: "true"  
 - name: deploy
