@@ -9,7 +9,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: gsafety/demo:1.0
+      tag: 10.3.10.131:5000/gsafety/demo:1.0
       pushRemote: true
       registry: 10.3.10.131:5000
 - name: deploy
