@@ -27,5 +27,4 @@ spec:
     app: demo
   ports:
   - protocol: TCP
-    port: 18080
     targetPort: 8080
