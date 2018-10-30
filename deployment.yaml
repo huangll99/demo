@@ -26,6 +26,6 @@ spec:
   selector:
     app: demo
   ports:
-  - protocal: TCP
+  - protocol: TCP
     port: 18080
     targetPort: 8080
