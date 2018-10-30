@@ -14,7 +14,8 @@ stages:
       registry: 10.3.10.131:5000
       insecure: true
     env:
-      PLUGIN_DEBUG: "true"  
+      PLUGIN_DEBUG: "true"
+      PLUGIN_INSECURE: "true"  
 - name: deploy
   steps:
   - applyYamlConfig:
