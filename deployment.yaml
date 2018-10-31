@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: demo
-        image: 10.3.10.131:5000/gsafety/demo:v2
+        image: 10.3.10.131:5000/gsafety/demo:v3
         ports:
         - containerPort: 8080
 
