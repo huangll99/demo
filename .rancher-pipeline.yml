@@ -9,10 +9,17 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: demo:1.0
-      registry: 127.0.0.1:34640
+      tag: gsafety/demo:v1
+      pushRemote: true
+      registry: 10.3.10.131:5000
+    env:
+      PLUGIN_DEBUG: "true"
+      PLUGIN_INSECURE: "true"
 - name: deploy
   steps:
   - applyYamlConfig:
       path: ./deployment.yaml
 timeout: 60
+branch:
+  include:
+  - master
